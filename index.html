@@ -1,62 +1,96 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="es">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Carlota López Casrracedo — Portfolio</title>
+  <title>Carlota López Carracedo — Portfolio</title>
   <meta name="description" content="Portfolio profesional de Carlota López Carracedo: branding, diseño digital y producción audiovisual." />
   <meta property="og:title" content="Carlota López Carracedo — Portfolio" />
   <meta property="og:description" content="Branding, diseño digital y producción audiovisual. Proyectos: Quimeras del Norte, NOBREH, Vitamina 3." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,700&family=Space+Grotesk:wght@300;400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="./styles.css" />
 </head>
 <body>
   <!-- Top bar -->
   <header class="topbar">
-    <a class="brand" href="#home">CARLOTA LÓPEZ CARRACEDO</a>
-    <button class="menuBtn" id="openMenu" aria-controls="overlay" aria-expanded="false">Menu</button>
+    <a class="brand" href="#home">Carlota López Carracedo</a>
+    <button class="menuBtn" id="openMenu" aria-controls="overlay" aria-expanded="false">Menú</button>
   </header>
 
   <!-- Overlay menu -->
   <aside class="overlay" id="overlay" aria-hidden="true">
     <div class="overlayInner">
-      <button class="closeBtn" id="closeMenu" aria-label="Cerrar menú">Close</button>
-
+      <button class="closeBtn" id="closeMenu" aria-label="Cerrar menú">Cerrar</button>
       <nav class="overlayNav">
         <a href="#home">01. Inicio</a>
         <a href="#perfil">02. Perfil</a>
         <a href="#work">03. Proyectos</a>
         <a href="#contact">04. Contacto</a>
       </nav>
+      <div class="overlayFooter">
+        <span>Contacto directo</span>
+        <a href="mailto:carlotalopecarracedo@gmail.com">carlotalopecarracedo@gmail.com</a>
+      </div>
     </div>
   </aside>
 
   <!-- HERO -->
   <main id="home" class="section hero">
-    <div class="heroGrid">
-      <div>
+    <div class="heroTop">
+      <div class="heroTitleWrap">
+        <p class="eyebrow">Creadora de contenido &amp; diseñadora gráfica</p>
         <h1 class="heroTitle">
-          CARLOTA<br />LÓPEZ<br />CARRACEDO
+          <span>CARLOTA</span>
+          <span>LÓPEZ</span>
+          <span>CARRACEDO</span>
+          <span class="heroTag">Diseñadora©</span>
         </h1>
         <p class="heroSub">
-          Creadora de contenido &amp; diseñadora gráfica — branding, diseño digital y producción audiovisual
+          Branding, diseño digital y producción audiovisual con enfoque estratégico y narrativa visual.
         </p>
-        <div class="mini">
-          <span>Español · Gallego · Inglés (nivel profesional)</span>
-        </div>
       </div>
 
-      <div class="heroImages" aria-label="Galería de portada">
-        <div class="ph" aria-hidden="true"></div>
-        <div class="ph" aria-hidden="true"></div>
-        <div class="ph" aria-hidden="true"></div>
-        <div class="ph" aria-hidden="true"></div>
+      <div class="heroMeta">
+        <div class="metaBlock navBlock">
+          <a class="metaNav" href="#home">01. Inicio</a>
+          <a class="metaNav" href="#work">02. Proyectos</a>
+        </div>
+        <div class="metaBlock">
+          <p class="metaLabel">03.</p>
+          <a class="metaLink" href="#contact">Contacto</a>
+        </div>
+        <div class="metaBlock">
+          <p class="metaLabel">Email</p>
+          <a class="metaLink" href="mailto:carlotalopecarracedo@gmail.com">carlotalopecarracedo@gmail.com</a>
+        </div>
+        <div class="metaBlock">
+          <p class="metaLabel">Idiomas</p>
+          <p class="metaText">Español · Gallego · Inglés (nivel profesional)</p>
+        </div>
+        <div class="metaBlock">
+          <p class="metaLabel">Especialidad</p>
+          <p class="metaText">Identidad corporativa, diseño digital y contenido audiovisual.</p>
+        </div>
       </div>
+    </div>
+
+    <div class="heroGallery" aria-label="Galería de portada">
+      <div class="galleryItem tall" aria-hidden="true"></div>
+      <div class="galleryItem wide" aria-hidden="true"></div>
+      <div class="galleryItem" aria-hidden="true"></div>
+      <div class="galleryItem" aria-hidden="true"></div>
+      <div class="galleryItem" aria-hidden="true"></div>
     </div>
   </main>
 
   <!-- PERFIL -->
   <section id="perfil" class="section about">
-    <h2 class="h2">Perfil profesional</h2>
+    <div class="sectionHeader">
+      <h2 class="h2">Perfil profesional</h2>
+      <span class="mutedSmall">Perfil</span>
+    </div>
     <p class="lead">
       Creadora de contenido y diseñadora gráfica especializada en branding, diseño digital y producción audiovisual.
       Experiencia en desarrollo de identidades corporativas, diseño de materiales gráficos y gestión de contenido multiplataforma.
@@ -64,7 +98,7 @@
 
     <div class="cols">
       <div>
-        <h2 class="h2">Formación</h2>
+        <h3 class="h3">Formación</h3>
         <ul class="list">
           <li><span>Grado en Publicidad y RR. PP.</span><span>Universidad de Vigo</span><span>2020—2024</span></li>
           <li><span>Grado en Publicidad y RR. PP.</span><span>Universidad de Valladolid</span><span>2022—2023</span></li>
@@ -73,7 +107,7 @@
       </div>
 
       <div>
-        <h2 class="h2">Competencias técnicas</h2>
+        <h3 class="h3">Competencias técnicas</h3>
         <ul class="bullets">
           <li>Adobe Illustrator · Photoshop · InDesign</li>
           <li>Canva · Figma · Procreate</li>
@@ -84,9 +118,26 @@
     </div>
   </section>
 
+  <!-- DECLARACIÓN + ENFOQUE -->
+  <section class="section statement">
+    <div class="statementGrid">
+      <p class="statementLead">
+        Enfoque estratégico: cada elemento visual tiene un propósito. Identidades que cuentan historias con
+        simbolismo cultural, color con intención y simplicidad elegante.
+      </p>
+      <div class="statementSide">
+        <p class="statementLabel">Dirección creativa</p>
+        <p class="statementText">
+          Desarrollo conceptual, justificación estratégica y sistemas visuales sólidos para marcas que quieren
+          destacar con coherencia.
+        </p>
+      </div>
+    </div>
+  </section>
+
   <!-- EXPERIENCIA -->
   <section class="section experience">
-    <div class="row">
+    <div class="sectionHeader">
       <h2 class="h2">Experiencia profesional</h2>
       <span class="mutedSmall">Selección</span>
     </div>
@@ -98,9 +149,9 @@
       <li><span>Creadora de Contenido</span><span>Orestes Comunica</span><span>Ago 2024—Actualidad</span></li>
     </ul>
 
-    <div class="cols" style="margin-top:26px;">
+    <div class="cols">
       <div>
-        <h2 class="h2">Capacidades profesionales</h2>
+        <h3 class="h3">Capacidades profesionales</h3>
         <ul class="bullets">
           <li><strong>Diseño gráfico:</strong> identidad corporativa, logotipos, manuales de marca, diseño editorial.</li>
           <li><strong>Contenido digital:</strong> plantillas para RRSS, posts, redacción de copys publicitarios.</li>
@@ -109,7 +160,7 @@
         </ul>
       </div>
       <div>
-        <h2 class="h2">Sectores</h2>
+        <h3 class="h3">Sectores y colaboración</h3>
         <ul class="bullets">
           <li>Salud y farmacia</li>
           <li>Marketing y publicidad</li>
@@ -118,7 +169,7 @@
           <li>Servicios creativos</li>
         </ul>
 
-        <h2 class="h2" style="margin-top:22px;">Habilidades complementarias</h2>
+        <h3 class="h3">Habilidades complementarias</h3>
         <ul class="bullets">
           <li>Gestión de proyectos creativos</li>
           <li>Comunicación con clientes</li>
@@ -130,19 +181,34 @@
     </div>
   </section>
 
+  <!-- DESTACADOS -->
+  <section class="section highlights">
+    <div class="sectionHeader">
+      <h2 class="h2">Destacados</h2>
+      <span class="mutedSmall">Highlights</span>
+    </div>
+    <ul class="highlightList">
+      <li>Identidades corporativas con significado cultural y territorial.</li>
+      <li>Sistemas visuales sólidos: logotipos, símbolos y manuales de marca.</li>
+      <li>Contenido digital para RRSS con narrativa y coherencia visual.</li>
+      <li>Producción audiovisual ágil para Reels, TikToks y cápsulas.</li>
+      <li>Diseño web y experiencias digitales con enfoque estratégico.</li>
+    </ul>
+  </section>
+
   <!-- WORK -->
   <section id="work" class="section work">
-    <div class="row">
+    <div class="sectionHeader">
       <h2 class="h2">Proyectos destacados</h2>
-      <a class="link" href="#contact">Contactar →</a>
+      <a class="link" href="#contact">Contactar</a>
     </div>
 
-    <div class="cards">
-      <article class="card">
-        <div class="thumb" aria-hidden="true"></div>
-        <div class="cardMeta">
+    <div class="workGrid">
+      <article class="workCard">
+        <div class="workImage" aria-hidden="true"></div>
+        <div class="workBody">
           <h3>Quimeras del Norte</h3>
-          <p>Branding e Identidad Visual</p>
+          <p>Branding e identidad visual</p>
           <p class="small muted">
             Identidad corporativa para plataforma web de narrativas gallegas. Color verde (naturaleza),
             roble/carballo (territorio) y quimera (mitología) como símbolos.
@@ -151,11 +217,11 @@
         </div>
       </article>
 
-      <article class="card">
-        <div class="thumb" aria-hidden="true"></div>
-        <div class="cardMeta">
+      <article class="workCard">
+        <div class="workImage alt" aria-hidden="true"></div>
+        <div class="workBody">
           <h3>NOBREH</h3>
-          <p>Identidad Corporativa · Gestión de Inversiones</p>
+          <p>Identidad corporativa · Gestión de inversiones</p>
           <p class="small muted">
             Imagen visual para empresa familiar (5 integrantes). Elegancia y simplicidad:
             color amarillo/dorado (riqueza) y trébol de 5 hojas (fortuna + familia).
@@ -164,11 +230,11 @@
         </div>
       </article>
 
-      <article class="card">
-        <div class="thumb" aria-hidden="true"></div>
-        <div class="cardMeta">
+      <article class="workCard">
+        <div class="workImage" aria-hidden="true"></div>
+        <div class="workBody">
           <h3>Vitamina 3</h3>
-          <p>Branding · Proyecto Universitario</p>
+          <p>Branding · Proyecto universitario</p>
           <p class="small muted">
             Identidad para dupla creativa: “dosis de energía” para marcas. Sistema gráfico basado en
             porcentajes (33,3%) y metáfora nutricional. Color verde lima/amarillo verdoso y tipografía bold.
@@ -179,20 +245,24 @@
     </div>
   </section>
 
-  <!-- METODOLOGÍA + FILOSOFÍA -->
+  <!-- SERVICIOS -->
   <section class="section services">
-    <div class="cols">
-      <div>
-        <h2 class="h2">Metodología de trabajo</h2>
+    <div class="sectionHeader">
+      <h2 class="h2">Metodología y enfoque</h2>
+      <span class="mutedSmall">Proceso</span>
+    </div>
+    <div class="servicesGrid">
+      <div class="serviceBlock">
+        <h3 class="h3">Metodología de trabajo</h3>
         <ul class="bullets">
           <li><strong>Investigación:</strong> análisis del cliente/sector, misión/visión, valores de marca.</li>
           <li><strong>Creativa:</strong> desarrollo conceptual, justificación estratégica, paleta con significado, simbolismos.</li>
           <li><strong>Producción:</strong> diseño de aplicaciones, desarrollo de entregables, presentación profesional.</li>
         </ul>
       </div>
-      <div>
-        <h2 class="h2">Filosofía de diseño</h2>
-        <p class="lead muted" style="font-size:18px; margin-top:0;">
+      <div class="serviceBlock">
+        <h3 class="h3">Filosofía de diseño</h3>
+        <p class="lead muted">
           Enfoque estratégico: cada elemento visual tiene un propósito. Identidades que cuentan historias con:
         </p>
         <ul class="bullets">
@@ -203,12 +273,26 @@
         </ul>
       </div>
     </div>
+    <div class="serviceList">
+      <span>Branding</span>
+      <span>Identidad visual</span>
+      <span>Diseño editorial</span>
+      <span>Contenido para RRSS</span>
+      <span>Producción audiovisual</span>
+      <span>Edición Reels/TikToks</span>
+      <span>Diseño web</span>
+      <span>WordPress / Elementor</span>
+    </div>
   </section>
 
   <!-- CONTACT -->
   <section id="contact" class="section contact">
-    <h2 class="contactTitle">Contacto</h2>
-    <p class="lead muted" style="margin-top:10px; max-width:60ch;">
+    <div class="sectionHeader">
+      <h2 class="h2">Contacto</h2>
+      <span class="mutedSmall">Let’s talk</span>
+    </div>
+    <p class="contactTitle">¿Hablamos de tu próximo proyecto?</p>
+    <p class="lead muted">
       Si quieres una identidad con sentido (y no un logo “porque sí”), escríbeme.
     </p>
     <a class="cta" href="mailto:carlotalopecarracedo@gmail.com">carlotalopecarracedo@gmail.com</a>
